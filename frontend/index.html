@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Destinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Beyond Destinations</h1>
+            <p class="tagline">Bead, Beyond, Explore, Adventure, Destinations.</p>
+            <p>당신의 경험과 꿈을 연결해 새로운 여행지를 찾아보세요.</p>
+        </header>
+
+        <main>
+            <form id="recommend-form">
+                <div class="input-group autocomplete-container">
+                    <label for="lived-city">살았던 도시</label>
+                    <input type="text" id="lived-city" placeholder="도시 이름 입력..." required autocomplete="off">
+                    <div class="autocomplete-list" id="lived-city-list"></div>
+                </div>
+                <div class="input-group autocomplete-container">
+                    <label for="dream-city">가고 싶은 도시</label>
+                    <input type="text" id="dream-city" placeholder="도시 이름 입력..." required autocomplete="off">
+                    <div class="autocomplete-list" id="dream-city-list"></div>
+                </div>
+                <div class="input-group">
+                    <label for="priority">여행에서 가장 중요한 것</label>
+                    <select id="priority">
+                        <option value="food">미식 (Food)</option>
+                        <option value="art">예술 (Art)</option>
+                        <option value="history">역사 (History)</option>
+                        <option value="nature">자연 (Nature)</option>
+                        <option value="shopping">쇼핑 (Shopping)</option>
+                        <option value="nightlife">나이트라이프 (Nightlife)</option>
+                        <option value="adventure">모험 (Adventure)</option>
+                    </select>
+                </div>
+                <button type="submit">새로운 여행지 추천받기</button>
+            </form>
+
+            <div id="result" class="hidden">
+                <h2>당신을 위한 추천 여행지</h2>
+                <div id="result-content"></div>
+            </div>
+            <div id="loading" class="hidden"><p>최적의 여행지를 찾고 있습니다...</p></div>
+            <div id="error" class="hidden"><p>오류가 발생했습니다.</p></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

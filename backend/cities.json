@@ -1,0 +1,849 @@
+[
+  {
+    "name": "Paris",
+    "country": "France",
+    "is_capital": true,
+    "description": "예술과 낭만의 도시, 파리는 루브르 박물관과 에펠탑, 그리고 세계적인 미식 경험으로 유명합니다.",
+    "features": { "history": 0.9, "art": 1.0, "food": 0.9, "nature": 0.4, "nightlife": 0.7, "shopping": 1.0, "adventure": 0.3 }
+  },
+  {
+    "name": "Kyoto",
+    "country": "Japan",
+    "is_capital": false,
+    "description": "수많은 사원과 신사, 아름다운 정원이 있는 교토는 일본의 전통 문화를 깊이 느낄 수 있는 곳입니다.",
+    "features": { "history": 1.0, "art": 0.8, "food": 0.8, "nature": 0.9, "nightlife": 0.4, "shopping": 0.6, "adventure": 0.5 }
+  },
+  {
+    "name": "Rome",
+    "country": "Italy",
+    "is_capital": true,
+    "description": "콜로세움과 로마 포럼 등 고대 로마의 유적이 살아 숨 쉬는 도시로, 역사와 미식 여행의 성지입니다.",
+    "features": { "history": 1.0, "art": 0.9, "food": 1.0, "nature": 0.3, "nightlife": 0.6, "shopping": 0.7, "adventure": 0.4 }
+  },
+  {
+    "name": "Barcelona",
+    "country": "Spain",
+    "is_capital": false,
+    "description": "가우디의 독특한 건축물과 활기찬 해변, 맛있는 타파스가 어우러진 예술과 열정의 도시입니다.",
+    "features": { "history": 0.7, "art": 1.0, "food": 0.9, "nature": 0.6, "nightlife": 1.0, "shopping": 0.8, "adventure": 0.7 }
+  },
+  {
+    "name": "Chiang Mai",
+    "country": "Thailand",
+    "is_capital": false,
+    "description": "태국 북부의 문화 중심지로, 고대 사원과 코끼리 보호 구역, 아름다운 자연 속에서 휴식을 취할 수 있습니다.",
+    "features": { "history": 0.7, "art": 0.5, "food": 0.8, "nature": 1.0, "nightlife": 0.5, "shopping": 0.5, "adventure": 0.9 }
+  },
+  {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "is_capital": true,
+    "description": "중세 유럽의 모습을 그대로 간직한 프라하 성과 카를교가 있는, 동화처럼 아름다운 도시입니다.",
+    "features": { "history": 0.9, "art": 0.7, "food": 0.6, "nature": 0.5, "nightlife": 0.8, "shopping": 0.6, "adventure": 0.4 }
+  },
+  {
+    "name": "New York",
+    "country": "USA",
+    "is_capital": false,
+    "description": "세계의 중심, 뉴욕은 타임스퀘어의 화려함과 브로드웨이의 뮤지컬, 끝없는 쇼핑과 미식의 기회를 제공합니다.",
+    "features": { "history": 0.6, "art": 1.0, "food": 0.9, "nature": 0.5, "nightlife": 1.0, "shopping": 1.0, "adventure": 0.5 }
+  },
+  {
+    "name": "London",
+    "country": "UK",
+    "is_capital": true,
+    "description": "대영 박물관부터 현대적인 런던 아이까지, 전통과 현대가 공존하는 영국의 수도입니다.",
+    "features": { "history": 0.9, "art": 1.0, "food": 0.8, "nature": 0.6, "nightlife": 0.9, "shopping": 0.9, "adventure": 0.4 }
+  },
+  {
+    "name": "Tokyo",
+    "country": "Japan",
+    "is_capital": true,
+    "description": "최첨단 기술과 전통 문화가 만나는 거대 도시로, 미식, 쇼핑, 독특한 서브컬처의 중심지입니다.",
+    "features": { "history": 0.5, "art": 0.7, "food": 1.0, "nature": 0.4, "nightlife": 1.0, "shopping": 1.0, "adventure": 0.4 }
+  },
+  {
+    "name": "Istanbul",
+    "country": "Turkey",
+    "is_capital": false,
+    "description": "동양과 서양의 문화가 교차하는 매혹적인 도시로, 아야 소피아와 블루 모스크가 장관을 이룹니다.",
+    "features": { "history": 1.0, "art": 0.8, "food": 0.9, "nature": 0.4, "nightlife": 0.7, "shopping": 0.8, "adventure": 0.5 }
+  },
+  {
+    "name": "Bangkok",
+    "country": "Thailand",
+    "is_capital": true,
+    "description": "활기 넘치는 거리, 화려한 왕궁, 맛있는 길거리 음식이 가득한 태국의 수도입니다.",
+    "features": { "history": 0.7, "art": 0.6, "food": 1.0, "nature": 0.3, "nightlife": 0.9, "shopping": 0.9, "adventure": 0.6 }
+  },
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "is_capital": true,
+    "description": "아름다운 운하와 자전거, 반 고흐 미술관으로 유명한 자유로운 분위기의 도시입니다.",
+    "features": { "history": 0.8, "art": 0.9, "food": 0.6, "nature": 0.6, "nightlife": 0.8, "shopping": 0.7, "adventure": 0.5 }
+  },
+  {
+    "name": "Seoul",
+    "country": "South Korea",
+    "is_capital": true,
+    "description": "K-Pop과 첨단 기술의 중심지이자, 경복궁과 같은 고궁이 공존하는 역동적인 도시입니다.",
+    "features": { "history": 0.7, "art": 0.7, "food": 1.0, "nature": 0.5, "nightlife": 1.0, "shopping": 1.0, "adventure": 0.4 }
+  },
+  {
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "is_capital": true,
+    "description": "베트남의 수도로, 프랑스 식민지 시대의 건축물과 활기찬 구시가지, 맛있는 쌀국수를 즐길 수 있습니다.",
+    "features": { "history": 0.8, "art": 0.5, "food": 0.9, "nature": 0.6, "nightlife": 0.6, "shopping": 0.6, "adventure": 0.7 }
+  },
+  {
+    "name": "Sydney",
+    "country": "Australia",
+    "is_capital": false,
+    "description": "오페라 하우스와 하버 브리지가 상징인 시드니는 아름다운 해변과 활기찬 도시 생활을 제공합니다.",
+    "features": { "history": 0.4, "art": 0.7, "food": 0.8, "nature": 0.9, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.9 }
+  },
+  {
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "is_capital": false,
+    "description": "거대한 예수상과 코파카바나 해변, 열정적인 삼바 축제로 유명한 세계적인 미항입니다.",
+    "features": { "history": 0.5, "art": 0.6, "food": 0.7, "nature": 1.0, "nightlife": 1.0, "shopping": 0.6, "adventure": 1.0 }
+  },
+  {
+    "name": "Cairo",
+    "country": "Egypt",
+    "is_capital": true,
+    "description": "기자의 피라미드와 스핑크스가 있는 고대 이집트 문명의 심장부입니다.",
+    "features": { "history": 1.0, "art": 0.4, "food": 0.5, "nature": 0.2, "nightlife": 0.4, "shopping": 0.7, "adventure": 0.8 }
+  },
+  {
+    "name": "Berlin",
+    "country": "Germany",
+    "is_capital": true,
+    "description": "분단의 역사를 간직한 베를린 장벽과 현대 예술, 자유로운 클럽 문화가 공존하는 도시입니다.",
+    "features": { "history": 0.9, "art": 0.9, "food": 0.6, "nature": 0.6, "nightlife": 1.0, "shopping": 0.7, "adventure": 0.5 }
+  },
+  {
+    "name": "Florence",
+    "country": "Italy",
+    "is_capital": false,
+    "description": "르네상스가 탄생한 도시로, 우피치 미술관과 두오모 성당 등 예술 작품 그 자체인 도시입니다.",
+    "features": { "history": 1.0, "art": 1.0, "food": 0.9, "nature": 0.5, "nightlife": 0.5, "shopping": 0.8, "adventure": 0.3 }
+  },
+  {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "is_capital": true,
+    "description": "언덕 위를 오가는 노란 트램과 파두 음악, 맛있는 에그타르트가 있는 매력적인 항구 도시입니다.",
+    "features": { "history": 0.9, "art": 0.7, "food": 0.9, "nature": 0.7, "nightlife": 0.8, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Vancouver",
+    "country": "Canada",
+    "is_capital": false,
+    "description": "웅장한 산과 태평양이 만나는 도시로, 도심 속에서 하이킹과 스키를 즐길 수 있는 자연 친화적인 곳입니다.",
+    "features": { "history": 0.3, "art": 0.6, "food": 0.8, "nature": 1.0, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.9 }
+  },
+  {
+    "name": "San Francisco",
+    "country": "USA",
+    "is_capital": false,
+    "description": "금문교와 케이블카, 알카트라즈 섬으로 유명하며 자유로운 문화와 혁신적인 기술의 중심지입니다.",
+    "features": { "history": 0.5, "art": 0.8, "food": 0.9, "nature": 0.7, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.7 }
+  },
+  {
+    "name": "Singapore",
+    "country": "Singapore",
+    "is_capital": true,
+    "description": "깨끗하고 현대적인 도시 국가로, 가든스 바이 더 베이와 다양한 문화의 음식을 즐길 수 있습니다.",
+    "features": { "history": 0.4, "art": 0.7, "food": 1.0, "nature": 0.7, "nightlife": 0.8, "shopping": 1.0, "adventure": 0.5 }
+  },
+  {
+    "name": "Dubai",
+    "country": "UAE",
+    "is_capital": false,
+    "description": "사막 위의 기적, 두바이는 세계에서 가장 높은 빌딩 부르즈 할리파와 거대한 쇼핑몰, 인공섬으로 유명합니다.",
+    "features": { "history": 0.3, "art": 0.5, "food": 0.7, "nature": 0.3, "nightlife": 0.8, "shopping": 1.0, "adventure": 0.8 }
+  },
+  {
+    "name": "Madrid",
+    "country": "Spain",
+    "is_capital": true,
+    "description": "프라도 미술관과 레알 마드리드의 열정이 있는 스페인의 수도로, 활기찬 밤 문화와 미식을 자랑합니다.",
+    "features": { "history": 0.8, "art": 1.0, "food": 0.9, "nature": 0.4, "nightlife": 1.0, "shopping": 0.8, "adventure": 0.4 }
+  },
+  {
+    "name": "Vienna",
+    "country": "Austria",
+    "is_capital": true,
+    "description": "모차르트와 클림트의 도시, 비엔나는 웅장한 궁전과 클래식 음악, 맛있는 커피와 케이크로 가득합니다.",
+    "features": { "history": 0.9, "art": 1.0, "food": 0.7, "nature": 0.7, "nightlife": 0.6, "shopping": 0.7, "adventure": 0.3 }
+  },
+  {
+    "name": "Budapest",
+    "country": "Hungary",
+    "is_capital": true,
+    "description": "다뉴브 강의 진주라 불리는 부다페스트는 아름다운 국회의사당과 세체니 온천으로 유명합니다.",
+    "features": { "history": 0.9, "art": 0.7, "food": 0.7, "nature": 0.5, "nightlife": 0.8, "shopping": 0.6, "adventure": 0.5 }
+  },
+  {
+    "name": "Cusco",
+    "country": "Peru",
+    "is_capital": false,
+    "description": "고대 잉카 제국의 수도였던 쿠스코는 마추픽추로 가는 관문이며, 독특한 고산 문화와 역사를 간직하고 있습니다.",
+    "features": { "history": 1.0, "art": 0.6, "food": 0.8, "nature": 0.9, "nightlife": 0.5, "shopping": 0.6, "adventure": 1.0 }
+  },
+  {
+    "name": "Marrakech",
+    "country": "Morocco",
+    "is_capital": false,
+    "description": "활기찬 제마 엘프나 광장과 미로 같은 시장(수크), 화려한 리아드가 있는 이국적인 도시입니다.",
+    "features": { "history": 0.8, "art": 0.7, "food": 0.8, "nature": 0.4, "nightlife": 0.6, "shopping": 0.9, "adventure": 0.8 }
+  },
+  {
+    "name": "Hong Kong",
+    "country": "China",
+    "is_capital": false,
+    "description": "화려한 스카이라인과 빅토리아 피크의 야경, 딤섬과 쇼핑의 천국인 역동적인 도시입니다.",
+    "features": { "history": 0.5, "art": 0.6, "food": 1.0, "nature": 0.6, "nightlife": 0.9, "shopping": 1.0, "adventure": 0.5 }
+  },
+  {
+    "name": "Taipei",
+    "country": "Taiwan",
+    "is_capital": true,
+    "description": "타이베이 101과 국립고궁박물원, 활기찬 야시장과 맛있는 먹거리가 가득한 친절한 도시입니다.",
+    "features": { "history": 0.6, "art": 0.7, "food": 1.0, "nature": 0.7, "nightlife": 0.7, "shopping": 0.8, "adventure": 0.6 }
+  },
+  {
+    "name": "Moscow",
+    "country": "Russia",
+    "is_capital": true,
+    "description": "붉은 광장과 크렘린 궁전, 양파 모양 돔의 성 바실리 대성당이 있는 러시아의 심장부입니다.",
+    "features": { "history": 0.9, "art": 0.9, "food": 0.5, "nature": 0.5, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.3 }
+  },
+  {
+    "name": "St. Petersburg",
+    "country": "Russia",
+    "is_capital": false,
+    "description": "표트르 대제가 건설한 '북방의 베네치아'로, 에르미타시 미술관과 아름다운 운하가 있습니다.",
+    "features": { "history": 0.9, "art": 1.0, "food": 0.5, "nature": 0.5, "nightlife": 0.6, "shopping": 0.6, "adventure": 0.3 }
+  },
+  {
+    "name": "Buenos Aires",
+    "country": "Argentina",
+    "is_capital": true,
+    "description": "'남미의 파리'라 불리며, 열정적인 탱고와 유럽풍 건축물, 맛있는 스테이크를 즐길 수 있습니다.",
+    "features": { "history": 0.7, "art": 0.8, "food": 0.9, "nature": 0.4, "nightlife": 0.9, "shopping": 0.7, "adventure": 0.5 }
+  },
+  {
+    "name": "Cape Town",
+    "country": "South Africa",
+    "is_capital": false,
+    "description": "테이블 마운틴 아래 자리한 아름다운 도시로, 와이너리, 해변, 그리고 다채로운 자연을 만날 수 있습니다.",
+    "features": { "history": 0.7, "art": 0.7, "food": 0.8, "nature": 1.0, "nightlife": 0.7, "shopping": 0.7, "adventure": 1.0 }
+  },
+  {
+    "name": "Dublin",
+    "country": "Ireland",
+    "is_capital": true,
+    "description": "기네스 맥주와 아이리시 펍, 유쾌한 사람들이 있는 문학과 음악의 도시입니다.",
+    "features": { "history": 0.8, "art": 0.7, "food": 0.6, "nature": 0.6, "nightlife": 0.9, "shopping": 0.6, "adventure": 0.5 }
+  },
+  {
+    "name": "Edinburgh",
+    "country": "Scotland",
+    "is_capital": true,
+    "description": "에든버러 성이 내려다보는 중세 도시로, 해리포터의 영감이 된 신비로운 골목들이 가득합니다.",
+    "features": { "history": 1.0, "art": 0.7, "food": 0.6, "nature": 0.7, "nightlife": 0.8, "shopping": 0.6, "adventure": 0.6 }
+  },
+  {
+    "name": "Havana",
+    "country": "Cuba",
+    "is_capital": true,
+    "description": "시간이 멈춘 듯한 도시, 아바나는 올드카와 시가, 모히토, 그리고 혁명의 역사가 살아 숨 쉽니다.",
+    "features": { "history": 0.9, "art": 0.8, "food": 0.5, "nature": 0.6, "nightlife": 0.8, "shopping": 0.3, "adventure": 0.7 }
+  },
+  {
+    "name": "Jaipur",
+    "country": "India",
+    "is_capital": false,
+    "description": "'핑크 시티' 자이푸르는 화려한 궁전과 성, 활기찬 시장이 있는 라자스탄의 보석 같은 도시입니다.",
+    "features": { "history": 0.9, "art": 0.8, "food": 0.7, "nature": 0.3, "nightlife": 0.4, "shopping": 0.9, "adventure": 0.7 }
+  },
+  {
+    "name": "Krakow",
+    "country": "Poland",
+    "is_capital": false,
+    "description": "아름다운 중앙 시장 광장과 바벨 성이 있는 폴란드의 문화 수도로, 아픈 역사를 간직한 아우슈비츠와 가깝습니다.",
+    "features": { "history": 1.0, "art": 0.7, "food": 0.6, "nature": 0.5, "nightlife": 0.8, "shopping": 0.6, "adventure": 0.4 }
+  },
+  {
+    "name": "Las Vegas",
+    "country": "USA",
+    "is_capital": false,
+    "description": "사막 위의 화려한 엔터테인먼트 도시로, 카지노, 호화로운 호텔, 세계적인 쇼가 끊이지 않습니다.",
+    "features": { "history": 0.2, "art": 0.5, "food": 0.8, "nature": 0.3, "nightlife": 1.0, "shopping": 0.9, "adventure": 0.6 }
+  },
+  {
+    "name": "Los Angeles",
+    "country": "USA",
+    "is_capital": false,
+    "description": "할리우드와 영화 산업의 중심지로, 아름다운 해변과 다양한 문화가 공존하는 거대 도시입니다.",
+    "features": { "history": 0.4, "art": 0.8, "food": 0.9, "nature": 0.7, "nightlife": 0.9, "shopping": 0.9, "adventure": 0.7 }
+  },
+  {
+    "name": "Melbourne",
+    "country": "Australia",
+    "is_capital": false,
+    "description": "독특한 그래피티 골목과 맛있는 커피, 활기찬 예술 씬으로 유명한 호주의 문화 수도입니다.",
+    "features": { "history": 0.4, "art": 0.9, "food": 0.9, "nature": 0.7, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.6 }
+  },
+  {
+    "name": "Mexico City",
+    "country": "Mexico",
+    "is_capital": true,
+    "description": "아즈텍 문명의 유적 위에 세워진 거대 도시로, 프리다 칼로의 예술과 맛있는 타코를 즐길 수 있습니다.",
+    "features": { "history": 1.0, "art": 0.9, "food": 1.0, "nature": 0.4, "nightlife": 0.8, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Miami",
+    "country": "USA",
+    "is_capital": false,
+    "description": "아르데코 건축물과 아름다운 해변, 라틴 문화의 영향을 받은 활기찬 밤 문화가 있는 도시입니다.",
+    "features": { "history": 0.4, "art": 0.8, "food": 0.8, "nature": 0.8, "nightlife": 1.0, "shopping": 0.8, "adventure": 0.7 }
+  },
+  {
+    "name": "Munich",
+    "country": "Germany",
+    "is_capital": false,
+    "description": "세계적인 맥주 축제 옥토버페스트의 고향이며, 아름다운 영국 정원과 BMW 박물관이 있습니다.",
+    "features": { "history": 0.8, "art": 0.8, "food": 0.7, "nature": 0.8, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.5 }
+  },
+  {
+    "name": "Nairobi",
+    "country": "Kenya",
+    "is_capital": true,
+    "description": "도시 안의 국립공원에서 야생 동물을 만날 수 있는 독특한 경험을 제공하는 동아프리카의 중심지입니다.",
+    "features": { "history": 0.4, "art": 0.5, "food": 0.6, "nature": 0.9, "nightlife": 0.6, "shopping": 0.6, "adventure": 1.0 }
+  },
+  {
+    "name": "New Delhi",
+    "country": "India",
+    "is_capital": true,
+    "description": "무굴 제국의 유산과 현대 인도가 공존하는 혼돈 속의 매력적인 도시입니다.",
+    "features": { "history": 0.9, "art": 0.6, "food": 0.9, "nature": 0.4, "nightlife": 0.5, "shopping": 0.8, "adventure": 0.6 }
+  },
+  {
+    "name": "New Orleans",
+    "country": "USA",
+    "is_capital": false,
+    "description": "재즈의 발상지로, 독특한 크리올 음식과 활기찬 프렌치 쿼터의 밤 문화가 매력적입니다.",
+    "features": { "history": 0.8, "art": 0.7, "food": 1.0, "nature": 0.5, "nightlife": 1.0, "shopping": 0.5, "adventure": 0.5 }
+  },
+  {
+    "name": "Osaka",
+    "country": "Japan",
+    "is_capital": false,
+    "description": "'일본의 부엌'이라 불릴 만큼 맛있는 음식이 가득하며, 활기찬 도톤보리와 오사카 성이 유명합니다.",
+    "features": { "history": 0.7, "art": 0.6, "food": 1.0, "nature": 0.3, "nightlife": 1.0, "shopping": 0.9, "adventure": 0.4 }
+  },
+  {
+    "name": "Oslo",
+    "country": "Norway",
+    "is_capital": true,
+    "description": "뭉크의 '절규'를 만날 수 있는 현대적인 디자인의 도시로, 아름다운 피오르드와 가깝습니다.",
+    "features": { "history": 0.6, "art": 0.8, "food": 0.6, "nature": 0.9, "nightlife": 0.6, "shopping": 0.7, "adventure": 0.8 }
+  },
+  {
+    "name": "Queenstown",
+    "country": "New Zealand",
+    "is_capital": false,
+    "description": "아름다운 호수와 산으로 둘러싸인 '모험의 수도'로, 번지점프, 스카이다이빙 등 익스트림 스포츠의 천국입니다.",
+    "features": { "history": 0.2, "art": 0.4, "food": 0.7, "nature": 1.0, "nightlife": 0.7, "shopping": 0.5, "adventure": 1.0 }
+  },
+  {
+    "name": "Reykjavik",
+    "country": "Iceland",
+    "is_capital": true,
+    "description": "불과 얼음의 나라 아이슬란드의 수도로, 오로라와 블루라군을 체험할 수 있는 관문입니다.",
+    "features": { "history": 0.5, "art": 0.7, "food": 0.6, "nature": 1.0, "nightlife": 0.7, "shopping": 0.6, "adventure": 1.0 }
+  },
+  {
+    "name": "Santiago",
+    "country": "Chile",
+    "is_capital": true,
+    "description": "안데스 산맥이 병풍처럼 둘러싼 칠레의 수도로, 와이너리와 현대적인 도시 경관이 조화를 이룹니다.",
+    "features": { "history": 0.6, "art": 0.7, "food": 0.8, "nature": 0.8, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.8 }
+  },
+  {
+    "name": "Sao Paulo",
+    "country": "Brazil",
+    "is_capital": false,
+    "description": "남미 최대의 도시로, 다채로운 예술, 미식, 그리고 활기찬 비즈니스의 중심지입니다.",
+    "features": { "history": 0.5, "art": 0.9, "food": 0.9, "nature": 0.3, "nightlife": 0.9, "shopping": 0.8, "adventure": 0.4 }
+  },
+  {
+    "name": "Seattle",
+    "country": "USA",
+    "is_capital": false,
+    "description": "스타벅스 1호점과 스페이스 니들이 있는 도시로, 그런지 음악과 혁신적인 기술 기업들의 고향입니다.",
+    "features": { "history": 0.4, "art": 0.7, "food": 0.8, "nature": 0.8, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Shanghai",
+    "country": "China",
+    "is_capital": false,
+    "description": "푸동의 미래적인 스카이라인과 와이탄의 고전적인 유럽풍 건축물이 공존하는 중국의 경제 수도입니다.",
+    "features": { "history": 0.6, "art": 0.8, "food": 0.9, "nature": 0.3, "nightlife": 0.9, "shopping": 1.0, "adventure": 0.4 }
+  },
+  {
+    "name": "Stockholm",
+    "country": "Sweden",
+    "is_capital": true,
+    "description": "여러 개의 섬으로 이루어진 '북방의 베네치아'로, 아름다운 구시가지 감라스탄과 현대적인 디자인이 조화를 이룹니다.",
+    "features": { "history": 0.8, "art": 0.8, "food": 0.7, "nature": 0.9, "nightlife": 0.7, "shopping": 0.8, "adventure": 0.5 }
+  },
+  {
+    "name": "Tel Aviv",
+    "country": "Israel",
+    "is_capital": false,
+    "description": "지중해 연안의 현대적인 도시로, 아름다운 해변과 바우하우스 건축물, 활기찬 밤 문화로 유명합니다.",
+    "features": { "history": 0.6, "art": 0.8, "food": 0.8, "nature": 0.7, "nightlife": 1.0, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Toronto",
+    "country": "Canada",
+    "is_capital": false,
+    "description": "세계에서 가장 다문화적인 도시 중 하나로, CN 타워와 다양한 커뮤니티의 음식과 축제를 즐길 수 있습니다.",
+    "features": { "history": 0.4, "art": 0.8, "food": 0.9, "nature": 0.6, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.4 }
+  },
+  {
+    "name": "Venice",
+    "country": "Italy",
+    "is_capital": false,
+    "description": "물 위에 떠 있는 도시 베네치아는 곤돌라와 미로 같은 골목, 아름다운 운하가 있는 독보적인 곳입니다.",
+    "features": { "history": 1.0, "art": 1.0, "food": 0.8, "nature": 0.2, "nightlife": 0.5, "shopping": 0.7, "adventure": 0.4 }
+  },
+  {
+    "name": "Warsaw",
+    "country": "Poland",
+    "is_capital": true,
+    "description": "전쟁의 폐허 속에서 재건된 '불사조의 도시'로, 쇼팽의 심장이 묻혀있는 폴란드의 수도입니다.",
+    "features": { "history": 0.9, "art": 0.7, "food": 0.6, "nature": 0.5, "nightlife": 0.7, "shopping": 0.6, "adventure": 0.4 }
+  },
+  {
+    "name": "Washington D.C.",
+    "country": "USA",
+    "is_capital": true,
+    "description": "미국의 수도로, 백악관과 국회의사당, 수많은 무료 박물관과 기념물이 있는 역사의 중심지입니다.",
+    "features": { "history": 1.0, "art": 0.9, "food": 0.7, "nature": 0.6, "nightlife": 0.6, "shopping": 0.6, "adventure": 0.3 }
+  },
+  {
+    "name": "Zurich",
+    "country": "Switzerland",
+    "is_capital": false,
+    "description": "아름다운 취리히 호수와 알프스 전망을 자랑하는 스위스의 금융 중심지로, 깨끗하고 질서 정연합니다.",
+    "features": { "history": 0.7, "art": 0.8, "food": 0.7, "nature": 0.9, "nightlife": 0.7, "shopping": 0.9, "adventure": 0.8 }
+  },
+  {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "is_capital": true,
+    "description": "인어공주 동상과 알록달록한 뉘하운 항구, 휘게(Hygge) 라이프스타일을 경험할 수 있는 디자인의 도시입니다.",
+    "features": { "history": 0.8, "art": 0.8, "food": 0.8, "nature": 0.7, "nightlife": 0.7, "shopping": 0.8, "adventure": 0.5 }
+  },
+  {
+    "name": "Interlaken",
+    "country": "Switzerland",
+    "is_capital": false,
+    "description": "두 개의 호수 사이에 위치한 그림 같은 마을로, 융프라우로 가는 관문이자 패러글라이딩 등 모험의 천국입니다.",
+    "features": { "history": 0.3, "art": 0.3, "food": 0.6, "nature": 1.0, "nightlife": 0.5, "shopping": 0.4, "adventure": 1.0 }
+  },
+  {
+    "name": "Siem Reap",
+    "country": "Cambodia",
+    "is_capital": false,
+    "description": "세계적인 유적지 앙코르 와트로 가는 관문 도시로, 신비로운 고대 사원들을 탐험할 수 있습니다.",
+    "features": { "history": 1.0, "art": 0.7, "food": 0.7, "nature": 0.7, "nightlife": 0.6, "shopping": 0.5, "adventure": 0.9 }
+  },
+  {
+    "name": "Athens",
+    "country": "Greece",
+    "is_capital": true,
+    "description": "서양 문명의 발상지로, 파르테논 신전이 있는 아크로폴리스와 고대 철학의 흔적이 남아있습니다.",
+    "features": { "history": 1.0, "art": 0.8, "food": 0.9, "nature": 0.5, "nightlife": 0.7, "shopping": 0.6, "adventure": 0.5 }
+  },
+  {
+    "name": "Dubrovnik",
+    "country": "Croatia",
+    "is_capital": false,
+    "description": "아드리아 해의 진주라 불리는 곳으로, 중세 성벽으로 둘러싸인 아름다운 구시가지가 유명합니다.",
+    "features": { "history": 0.9, "art": 0.6, "food": 0.8, "nature": 0.9, "nightlife": 0.7, "shopping": 0.5, "adventure": 0.7 }
+  },
+  {
+    "name": "Fukuoka",
+    "country": "Japan",
+    "is_capital": false,
+    "description": "활기찬 도시 생활과 맛있는 돈코츠 라멘, 그리고 인근의 자연을 함께 즐길 수 있는 규슈의 관문입니다.",
+    "features": { "history": 0.6, "art": 0.6, "food": 1.0, "nature": 0.6, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.5 }
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "is_capital": false,
+    "description": "과거 사이공이라 불렸던 베트남의 경제 중심지로, 오토바이 물결과 프랑스풍 건축물이 인상적입니다.",
+    "features": { "history": 0.8, "art": 0.5, "food": 0.9, "nature": 0.3, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.6 }
+  },
+  {
+    "name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "is_capital": true,
+    "description": "페트로나스 트윈 타워가 상징인 말레이시아의 수도로, 다양한 문화가 공존하며 맛있는 음식이 많습니다.",
+    "features": { "history": 0.5, "art": 0.6, "food": 0.9, "nature": 0.6, "nightlife": 0.7, "shopping": 0.9, "adventure": 0.6 }
+  },
+  {
+    "name": "Manila",
+    "country": "Philippines",
+    "is_capital": true,
+    "description": "스페인 식민지 시대의 유산과 현대적인 쇼핑몰이 공존하는 필리핀의 수도입니다.",
+    "features": { "history": 0.7, "art": 0.5, "food": 0.7, "nature": 0.4, "nightlife": 0.7, "shopping": 0.8, "adventure": 0.5 }
+  },
+  {
+    "name": "Phuket",
+    "country": "Thailand",
+    "is_capital": false,
+    "description": "아름다운 해변과 에메랄드빛 바다, 활기찬 밤 문화로 유명한 태국의 대표적인 휴양지입니다.",
+    "features": { "history": 0.3, "art": 0.4, "food": 0.8, "nature": 1.0, "nightlife": 0.9, "shopping": 0.6, "adventure": 0.9 }
+  },
+  {
+    "name": "Bali",
+    "country": "Indonesia",
+    "is_capital": false,
+    "description": "신들의 섬 발리는 독특한 힌두 문화와 아름다운 자연, 서핑과 요가의 성지로 사랑받습니다.",
+    "features": { "history": 0.6, "art": 0.8, "food": 0.8, "nature": 1.0, "nightlife": 0.8, "shopping": 0.7, "adventure": 0.9 }
+  },
+  {
+    "name": "Chicago",
+    "country": "USA",
+    "is_capital": false,
+    "description": "독특한 건축물과 재즈 음악, 맛있는 딥디쉬 피자로 유명한 미국 중서부의 중심 도시입니다.",
+    "features": { "history": 0.6, "art": 0.9, "food": 0.9, "nature": 0.5, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.4 }
+  },
+  {
+    "name": "Boston",
+    "country": "USA",
+    "is_capital": false,
+    "description": "미국 독립 혁명의 발자취를 따라 걸을 수 있는 프리덤 트레일과 명문 대학들이 있는 역사의 도시입니다.",
+    "features": { "history": 1.0, "art": 0.8, "food": 0.8, "nature": 0.6, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.3 }
+  },
+  {
+    "name": "Montreal",
+    "country": "Canada",
+    "is_capital": false,
+    "description": "북미의 파리라 불리는 몬트리올은 프랑스어권의 매력적인 구시가지와 활발한 예술 씬을 자랑합니다.",
+    "features": { "history": 0.8, "art": 0.9, "food": 0.8, "nature": 0.6, "nightlife": 0.8, "shopping": 0.7, "adventure": 0.5 }
+  },
+  {
+    "name": "Helsinki",
+    "country": "Finland",
+    "is_capital": true,
+    "description": "독특한 디자인과 사우나 문화, 그리고 아름다운 발트해의 섬들을 탐험할 수 있는 핀란드의 수도입니다.",
+    "features": { "history": 0.6, "art": 0.8, "food": 0.6, "nature": 0.8, "nightlife": 0.6, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Lima",
+    "country": "Peru",
+    "is_capital": true,
+    "description": "남미 미식의 수도로 불리며, 신선한 세비체와 다양한 페루 음식을 맛볼 수 있는 활기찬 도시입니다.",
+    "features": { "history": 0.8, "art": 0.7, "food": 1.0, "nature": 0.5, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Medellin",
+    "country": "Colombia",
+    "is_capital": false,
+    "description": "과거의 위험한 이미지를 벗고 혁신적인 도시 재생과 친절한 사람들로 '영원한 봄의 도시'라 불립니다.",
+    "features": { "history": 0.5, "art": 0.7, "food": 0.7, "nature": 0.8, "nightlife": 0.9, "shopping": 0.7, "adventure": 0.8 }
+  },
+  {
+    "name": "Cartagena",
+    "country": "Colombia",
+    "is_capital": false,
+    "description": "카리브해 연안의 성곽 도시로, 알록달록한 건물과 열대 기후, 낭만적인 분위기가 매력적입니다.",
+    "features": { "history": 0.9, "art": 0.7, "food": 0.8, "nature": 0.8, "nightlife": 0.8, "shopping": 0.6, "adventure": 0.7 }
+  },
+  {
+    "name": "Quito",
+    "country": "Ecuador",
+    "is_capital": true,
+    "description": "유네스코 세계문화유산으로 지정된 잘 보존된 구시가지와 적도 기념비가 있는 고산 도시입니다.",
+    "features": { "history": 0.9, "art": 0.7, "food": 0.7, "nature": 0.8, "nightlife": 0.6, "shopping": 0.6, "adventure": 0.8 }
+  },
+  {
+    "name": "Ljubljana",
+    "country": "Slovenia",
+    "is_capital": true,
+    "description": "용의 다리와 아름다운 성이 있는 작고 사랑스러운 도시로, '유럽의 숨겨진 보석'이라 불립니다.",
+    "features": { "history": 0.8, "art": 0.7, "food": 0.7, "nature": 0.9, "nightlife": 0.7, "shopping": 0.6, "adventure": 0.7 }
+  },
+  {
+    "name": "Split",
+    "country": "Croatia",
+    "is_capital": false,
+    "description": "고대 로마 황제의 궁전이 도시의 중심이 된 독특한 곳으로, 아름다운 아드리아해를 마주하고 있습니다.",
+    "features": { "history": 0.9, "art": 0.6, "food": 0.8, "nature": 0.9, "nightlife": 0.8, "shopping": 0.6, "adventure": 0.7 }
+  },
+  {
+    "name": "Zanzibar",
+    "country": "Tanzania",
+    "is_capital": false,
+    "description": "향신료의 섬 잔지바르는 아름다운 해변과 스와힐리 문화가 녹아있는 스톤 타운이 매력적입니다.",
+    "features": { "history": 0.8, "art": 0.6, "food": 0.8, "nature": 1.0, "nightlife": 0.6, "shopping": 0.7, "adventure": 0.9 }
+  },
+  {
+    "name": "Kathmandu",
+    "country": "Nepal",
+    "is_capital": true,
+    "description": "히말라야로 가는 관문으로, 수많은 사원과 영적인 분위기가 가득한 독특한 도시입니다.",
+    "features": { "history": 0.9, "art": 0.7, "food": 0.6, "nature": 0.8, "nightlife": 0.4, "shopping": 0.7, "adventure": 1.0 }
+  },
+  {
+    "name": "Jerusalem",
+    "country": "Israel",
+    "is_capital": true,
+    "description": "유대교, 기독교, 이슬람교 세 종교의 성지로, 수천 년의 역사가 겹겹이 쌓여있는 경이로운 곳입니다.",
+    "features": { "history": 1.0, "art": 0.7, "food": 0.7, "nature": 0.4, "nightlife": 0.4, "shopping": 0.5, "adventure": 0.6 }
+  },
+  {
+    "name": "Petra",
+    "country": "Jordan",
+    "is_capital": false,
+    "description": "붉은 사암을 깎아 만든 고대 도시 페트라는 '알 카즈네' 신전으로 유명한 세계적인 불가사의입니다.",
+    "features": { "history": 1.0, "art": 0.8, "food": 0.5, "nature": 0.8, "nightlife": 0.2, "shopping": 0.3, "adventure": 1.0 }
+  },
+  {
+    "name": "Lagos",
+    "country": "Nigeria",
+    "is_capital": false,
+    "description": "아프리카 최대의 도시 중 하나로, 폭발적인 에너지와 독특한 아프로비트 음악, 활기찬 예술 씬이 있습니다.",
+    "features": { "history": 0.4, "art": 0.8, "food": 0.7, "nature": 0.5, "nightlife": 0.9, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Accra",
+    "country": "Ghana",
+    "is_capital": true,
+    "description": "활기찬 시장과 아름다운 해변, 그리고 서아프리카의 따뜻한 환대를 경험할 수 있는 가나의 수도입니다.",
+    "features": { "history": 0.6, "art": 0.7, "food": 0.7, "nature": 0.6, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Dakar",
+    "country": "Senegal",
+    "is_capital": true,
+    "description": "아프리카 대륙 최서단에 위치한 도시로, 활기찬 음악과 예술, 그리고 프랑스 문화의 영향을 받은 곳입니다.",
+    "features": { "history": 0.6, "art": 0.8, "food": 0.7, "nature": 0.6, "nightlife": 0.7, "shopping": 0.6, "adventure": 0.7 }
+  },
+  {
+    "name": "Sapporo",
+    "country": "Japan",
+    "is_capital": false,
+    "description": "세계적인 눈 축제와 맛있는 미소 라멘, 신선한 해산물과 맥주로 유명한 홋카이도의 중심 도시입니다.",
+    "features": { "history": 0.4, "art": 0.5, "food": 1.0, "nature": 0.9, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.7 }
+  },
+  {
+    "name": "Okinawa",
+    "country": "Japan",
+    "is_capital": false,
+    "description": "아름다운 아열대 해변과 독특한 류큐 왕국 문화, 그리고 장수 음식으로 유명한 일본의 휴양지입니다.",
+    "features": { "history": 0.7, "art": 0.6, "food": 0.8, "nature": 1.0, "nightlife": 0.6, "shopping": 0.6, "adventure": 0.8 }
+  },
+  {
+    "name": "Jeju",
+    "country": "South Korea",
+    "is_capital": false,
+    "description": "화산 활동으로 만들어진 독특한 자연 경관과 아름다운 해변, 맛있는 흑돼지고기가 있는 한국 최대의 섬입니다.",
+    "features": { "history": 0.5, "art": 0.6, "food": 0.9, "nature": 1.0, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.8 }
+  },
+  {
+    "name": "Busan",
+    "country": "South Korea",
+    "is_capital": false,
+    "description": "아름다운 해운대 해수욕장과 활기찬 자갈치 시장, 신선한 해산물이 가득한 한국 제2의 도시입니다.",
+    "features": { "history": 0.6, "art": 0.7, "food": 0.9, "nature": 0.8, "nightlife": 0.8, "shopping": 0.8, "adventure": 0.6 }
+  },
+  {
+    "name": "Chengdu",
+    "country": "China",
+    "is_capital": false,
+    "description": "귀여운 판다와 사천요리의 본고장으로, 여유로운 분위기와 차 문화를 즐길 수 있는 도시입니다.",
+    "features": { "history": 0.7, "art": 0.6, "food": 1.0, "nature": 0.8, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Xi'an",
+    "country": "China",
+    "is_capital": false,
+    "description": "진시황의 병마용갱이 있는 고대 중국의 수도로, 실크로드의 출발점이기도 한 역사의 도시입니다.",
+    "features": { "history": 1.0, "art": 0.7, "food": 0.8, "nature": 0.4, "nightlife": 0.5, "shopping": 0.6, "adventure": 0.5 }
+  },
+  {
+    "name": "Nice",
+    "country": "France",
+    "is_capital": false,
+    "description": "아름다운 코트다쥐르 해변과 따뜻한 햇살, 샤갈과 마티스의 예술을 만날 수 있는 프랑스 남부의 휴양지입니다.",
+    "features": { "history": 0.7, "art": 0.9, "food": 0.8, "nature": 0.9, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Marseille",
+    "country": "France",
+    "is_capital": false,
+    "description": "프랑스에서 가장 오래된 도시로, 활기찬 항구와 다양한 문화가 섞인 독특한 매력이 있습니다.",
+    "features": { "history": 0.8, "art": 0.7, "food": 0.8, "nature": 0.8, "nightlife": 0.7, "shopping": 0.6, "adventure": 0.6 }
+  },
+  {
+    "name": "Lyon",
+    "country": "France",
+    "is_capital": false,
+    "description": "프랑스 미식의 수도라 불리며, 아름다운 구시가지와 빛 축제로 유명한 도시입니다.",
+    "features": { "history": 0.8, "art": 0.7, "food": 1.0, "nature": 0.5, "nightlife": 0.7, "shopping": 0.7, "adventure": 0.4 }
+  },
+  {
+    "name": "Hamburg",
+    "country": "Germany",
+    "is_capital": false,
+    "description": "독일 최대의 항구 도시로, 아름다운 운하와 창고 지구, 그리고 활기찬 음악 씬이 특징입니다.",
+    "features": { "history": 0.7, "art": 0.8, "food": 0.7, "nature": 0.6, "nightlife": 0.9, "shopping": 0.7, "adventure": 0.5 }
+  },
+  {
+    "name": "Frankfurt",
+    "country": "Germany",
+    "is_capital": false,
+    "description": "유럽 금융의 허브이자, 괴테의 고향이며 전통적인 사과주를 즐길 수 있는 곳입니다.",
+    "features": { "history": 0.7, "art": 0.7, "food": 0.6, "nature": 0.5, "nightlife": 0.7, "shopping": 0.8, "adventure": 0.4 }
+  },
+  {
+    "name": "Milan",
+    "country": "Italy",
+    "is_capital": false,
+    "description": "세계 패션과 디자인의 중심지로, 웅장한 두오모 성당과 최후의 만찬을 볼 수 있는 도시입니다.",
+    "features": { "history": 0.7, "art": 0.9, "food": 0.8, "nature": 0.3, "nightlife": 0.8, "shopping": 1.0, "adventure": 0.3 }
+  },
+  {
+    "name": "Naples",
+    "country": "Italy",
+    "is_capital": false,
+    "description": "피자의 발상지로, 활기 넘치고 혼란스러운 매력과 폼페이 유적지로 가는 관문입니다.",
+    "features": { "history": 0.9, "art": 0.7, "food": 1.0, "nature": 0.6, "nightlife": 0.7, "shopping": 0.6, "adventure": 0.6 }
+  },
+  {
+    "name": "Seville",
+    "country": "Spain",
+    "is_capital": false,
+    "description": "플라멩코의 본고장으로, 스페인 광장과 알카사르 궁전 등 안달루시아의 정열을 느낄 수 있습니다.",
+    "features": { "history": 0.9, "art": 0.8, "food": 0.9, "nature": 0.5, "nightlife": 0.9, "shopping": 0.7, "adventure": 0.5 }
+  },
+  {
+    "name": "Granada",
+    "country": "Spain",
+    "is_capital": false,
+    "description": "이슬람 건축의 걸작인 알함브라 궁전이 있는 도시로, 동화 같은 풍경과 타파스 문화가 유명합니다.",
+    "features": { "history": 1.0, "art": 0.9, "food": 0.8, "nature": 0.7, "nightlife": 0.7, "shopping": 0.6, "adventure": 0.6 }
+  },
+  {
+    "name": "Mumbai",
+    "country": "India",
+    "is_capital": false,
+    "description": "인도의 금융 및 엔터테인먼트 수도로, 볼리우드 영화 산업과 식민지 시대의 건축물이 특징입니다.",
+    "features": { "history": 0.7, "art": 0.7, "food": 0.9, "nature": 0.5, "nightlife": 0.8, "shopping": 0.9, "adventure": 0.6 }
+  },
+  {
+    "name": "Bengaluru",
+    "country": "India",
+    "is_capital": false,
+    "description": "'인도의 실리콘 밸리'로 알려진 기술 허브로, 아름다운 공원과 활기찬 펍 문화로 유명합니다.",
+    "features": { "history": 0.4, "art": 0.6, "food": 0.8, "nature": 0.7, "nightlife": 0.9, "shopping": 0.8, "adventure": 0.5 }
+  },
+  {
+    "name": "Goa",
+    "country": "India",
+    "is_capital": false,
+    "description": "아름다운 해변과 포르투갈 식민지 시대의 유산, 자유로운 파티 문화로 유명한 인도의 대표 휴양지입니다.",
+    "features": { "history": 0.6, "art": 0.5, "food": 0.8, "nature": 1.0, "nightlife": 0.9, "shopping": 0.5, "adventure": 0.8 }
+  },
+  {
+    "name": "Guangzhou",
+    "country": "China",
+    "is_capital": false,
+    "description": "중국 남부의 무역 중심지로, 광둥 요리의 본고장이며 현대적인 캔톤 타워가 랜드마크입니다.",
+    "features": { "history": 0.7, "art": 0.6, "food": 1.0, "nature": 0.5, "nightlife": 0.7, "shopping": 0.9, "adventure": 0.5 }
+  },
+  {
+    "name": "Shenzhen",
+    "country": "China",
+    "is_capital": false,
+    "description": "중국의 기술 혁신을 상징하는 도시로, 현대적인 디자인과 쇼핑, 활기찬 분위기를 자랑합니다.",
+    "features": { "history": 0.3, "art": 0.7, "food": 0.8, "nature": 0.6, "nightlife": 0.8, "shopping": 1.0, "adventure": 0.6 }
+  },
+  {
+    "name": "Jakarta",
+    "country": "Indonesia",
+    "is_capital": true,
+    "description": "거대한 인구와 복잡한 교통으로 유명한 인도네시아의 수도로, 다양한 문화가 뒤섞인 역동적인 도시입니다.",
+    "features": { "history": 0.6, "art": 0.6, "food": 0.9, "nature": 0.3, "nightlife": 0.8, "shopping": 0.9, "adventure": 0.5 }
+  },
+  {
+    "name": "Doha",
+    "country": "Qatar",
+    "is_capital": true,
+    "description": "미래적인 스카이라인과 이슬람 예술 박물관 등 현대적인 건축물이 돋보이는 카타르의 부유한 수도입니다.",
+    "features": { "history": 0.4, "art": 0.9, "food": 0.8, "nature": 0.4, "nightlife": 0.7, "shopping": 1.0, "adventure": 0.6 }
+  },
+  {
+    "name": "Riyadh",
+    "country": "Saudi Arabia",
+    "is_capital": true,
+    "description": "사막 한가운데 세워진 사우디아라비아의 수도로, 전통과 현대가 만나는 비즈니스의 중심지입니다.",
+    "features": { "history": 0.6, "art": 0.5, "food": 0.7, "nature": 0.2, "nightlife": 0.3, "shopping": 0.9, "adventure": 0.5 }
+  },
+  {
+    "name": "Karachi",
+    "country": "Pakistan",
+    "is_capital": false,
+    "description": "파키스탄 최대의 도시이자 경제 중심지로, 아라비아해에 접한 중요한 항구 도시입니다.",
+    "features": { "history": 0.6, "art": 0.5, "food": 0.8, "nature": 0.4, "nightlife": 0.5, "shopping": 0.7, "adventure": 0.5 }
+  },
+  {
+    "name": "Lahore",
+    "country": "Pakistan",
+    "is_capital": false,
+    "description": "무굴 제국의 유산이 풍부한 파키스탄의 문화 수도로, 웅장한 모스크와 정원으로 유명합니다.",
+    "features": { "history": 0.9, "art": 0.8, "food": 0.9, "nature": 0.5, "nightlife": 0.6, "shopping": 0.8, "adventure": 0.4 }
+  },
+  {
+    "name": "Dhaka",
+    "country": "Bangladesh",
+    "is_capital": true,
+    "description": "세계에서 가장 인구 밀도가 높은 도시 중 하나로, 릭샤와 활기찬 거리에서 생생한 에너지를 느낄 수 있습니다.",
+    "features": { "history": 0.7, "art": 0.5, "food": 0.7, "nature": 0.3, "nightlife": 0.4, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Tashkent",
+    "country": "Uzbekistan",
+    "is_capital": true,
+    "description": "실크로드의 중심지였던 우즈베키스탄의 수도로, 소련 시대의 건축물과 이슬람 유산이 공존합니다.",
+    "features": { "history": 0.8, "art": 0.7, "food": 0.8, "nature": 0.5, "nightlife": 0.5, "shopping": 0.7, "adventure": 0.6 }
+  },
+  {
+    "name": "Almaty",
+    "country": "Kazakhstan",
+    "is_capital": false,
+    "description": "만년설이 보이는 톈산 산맥에 둘러싸인 카자흐스탄의 옛 수도로, 아름다운 자연 경관을 자랑합니다.",
+    "features": { "history": 0.5, "art": 0.6, "food": 0.7, "nature": 0.9, "nightlife": 0.6, "shopping": 0.7, "adventure": 0.8 }
+  },
+  {
+    "name": "Beijing",
+    "country": "China",
+    "is_capital": true,
+    "description": "중국의 수도 베이징은 유서 깊은 역사와 현대적인 문화가 어우러진 도시입니다. 자금성, 만리장성 등 풍부한 역사 유적과 함께 활기찬 예술, 미식, 쇼핑을 경험할 수 있습니다.",
+    "features": { "history": 1.0, "art": 0.7, "food": 0.8, "nature": 0.4, "nightlife": 0.5, "shopping": 0.7, "adventure": 0.6 }
+  }
+]
